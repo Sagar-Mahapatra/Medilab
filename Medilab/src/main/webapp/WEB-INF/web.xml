@@ -4,4 +4,15 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  	<servlet-name>AppointmentServlet</servlet-name>
+  	<display-name>AppointmentServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.medilab.servlet.AppointmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AppointmentServlet</servlet-name>
+  	<url-pattern>/AppointmentServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

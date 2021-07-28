@@ -21,15 +21,12 @@
 	rel="stylesheet">
 
 <!-- External CSS  -->
-<link href="External/customize/bootstrap/css/bootstrap.min.css"
+<link href="customize/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="customize/bootstrap-icons/bootstrap-icons.css"
 	rel="stylesheet">
-<link href="External/customize/bootstrap-icons/bootstrap-icons.css"
-	rel="stylesheet">
-<link href="External/customize/boxicons/css/boxicons.min.css"
-	rel="stylesheet">
-<link href="External/customize/fontawesome-free/css/all.min.css"
-	rel="stylesheet">
-<link href="External/css/style.css" rel="stylesheet">
+<link href="customize/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="customize/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -95,8 +92,14 @@
 			<a href="#appointment" class="appointment-btn scrollto"><span
 				class="d-none d-md-inline">Make an</span> Appointment</a>
 
+
+
 		</div>
+		<%@include file="message.jsp"%>
+
 	</header>
+
+
 	<!-- Nav Bar End -->
 
 	<!-- Welcome Section Start -->
@@ -379,37 +382,38 @@
 					alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
 			</div>
 
-			<form action="forms/appointment.php" method="post" role="form"
-				class="php-email-form">
+			<form action="AppointmentServlet" method="post" role="form" class="">
 				<div class="row">
 					<div class="col-md-4 form-group">
-						<input type="text" name="name" class="form-control" id="name"
-							placeholder="Your Name" data-rule="minlen:4"
+						<input required type="text" name="name" class="form-control"
+							id="name" placeholder="Your Name" data-rule="minlen:4"
 							data-msg="Please enter at least 4 chars">
 						<div class="validate"></div>
 					</div>
 					<div class="col-md-4 form-group mt-3 mt-md-0">
-						<input type="email" class="form-control" name="email" id="email"
-							placeholder="Your Email" data-rule="email"
+						<input required type="email" class="form-control" name="email"
+							id="email" placeholder="Your Email" data-rule="email"
 							data-msg="Please enter a valid email">
 						<div class="validate"></div>
 					</div>
 					<div class="col-md-4 form-group mt-3 mt-md-0">
-						<input type="tel" class="form-control" name="phone" id="phone"
-							placeholder="Your Phone" data-rule="minlen:4"
+						<input required type="tel" class="form-control" name="phone"
+							id="phone" placeholder="Your Phone" data-rule="minlen:4"
 							data-msg="Please enter at least 4 chars">
 						<div class="validate"></div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4 form-group mt-3">
-						<input type="datetime" name="date" class="form-control datepicker"
-							id="date" placeholder="Appointment Date" data-rule="minlen:4"
+						<input required type="datetime" name="date"
+							class="form-control datepicker" id="date"
+							placeholder="Appointment Date" data-rule="minlen:4"
 							data-msg="Please enter at least 4 chars">
 						<div class="validate"></div>
 					</div>
 					<div class="col-md-4 form-group mt-3">
-						<select name="department" id="department" class="form-select">
+						<select required name="department" id="department"
+							class="form-select">
 							<option value="">Select Department</option>
 							<option value="Department 1">Department 1</option>
 							<option value="Department 2">Department 2</option>
@@ -418,7 +422,7 @@
 						<div class="validate"></div>
 					</div>
 					<div class="col-md-4 form-group mt-3">
-						<select name="doctor" id="doctor" class="form-select">
+						<select required name="doctor" id="doctor" class="form-select">
 							<option value="">Select Doctor</option>
 							<option value="Doctor 1">Doctor 1</option>
 							<option value="Doctor 2">Doctor 2</option>
@@ -433,16 +437,13 @@
 						placeholder="Message (Optional)"></textarea>
 					<div class="validate"></div>
 				</div>
-				<div class="mb-3">
-					<div class="loading">Loading</div>
-					<div class="error-message"></div>
-					<div class="sent-message">Your appointment request has been
-						sent successfully. Thank you!</div>
-				</div>
+
 				<div class="text-center">
-					<button type="submit">Make an Appointment</button>
+					<button type="submit" class="btn btn-success">Make an
+						Appointment</button>
 				</div>
 			</form>
+
 
 		</div>
 	</section>
@@ -981,9 +982,8 @@
 						<h3>Medilab</h3>
 						<p>
 							A108 Adam Street <br> New York, NY 535022<br> United
-							States <br>
-							<br> <strong>Phone:</strong> +1 5589 55488 55<br> <strong>Email:</strong>
-							<a href="">contact@example.com</a>
+							States <br> <br> <strong>Phone:</strong> +1 5589 55488
+							55<br> <strong>Email:</strong> <a href="">contact@example.com</a>
 
 						</p>
 					</div>
