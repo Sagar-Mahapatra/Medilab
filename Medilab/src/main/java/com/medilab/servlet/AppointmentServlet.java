@@ -73,6 +73,8 @@ public class AppointmentServlet extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		appointmentDao.getAllAppointments();
 
 		boolean saveAppointment = appointmentDao.saveAppointment(appointment);
 
