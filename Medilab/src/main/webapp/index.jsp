@@ -231,7 +231,7 @@
 	</section>
 	<!-- About Section End -->
 
-	<!-- ======= Counts Section ======= -->
+	<!-- count Section End -->
 	<section id="counts" class="counts">
 		<div class="container">
 
@@ -269,9 +269,9 @@
 
 		</div>
 	</section>
-	<!-- End Counts Section -->
+	<!-- count Section End -->
 
-	<!-- ======= Services Section ======= -->
+	<!-- service section start -->
 	<section id="services" class="services">
 		<div class="container">
 
@@ -368,9 +368,9 @@
 
 		</div>
 	</section>
-	<!-- End Services Section -->
+	<!-- service section end -->
 
-	<!-- ======= Appointment Section ======= -->
+	<!-- appointment section start -->
 	<section id="appointment" class="appointment section-bg">
 		<div class="container">
 
@@ -447,9 +447,9 @@
 
 		</div>
 	</section>
-	<!-- End Appointment Section -->
+	<!-- appointment section end -->
 
-	<!-- ======= Departments Section ======= -->
+	<!-- department section start -->
 	<section id="departments" class="departments">
 		<div class="container">
 
@@ -577,9 +577,9 @@
 
 		</div>
 	</section>
-	<!-- End Departments Section -->
+	<!-- department section end -->
 
-	<!-- ======= Doctors Section ======= -->
+	<!-- doctor section start -->
 	<section id="doctors" class="doctors">
 		<div class="container">
 
@@ -689,9 +689,9 @@
 
 		</div>
 	</section>
-	<!-- End Doctors Section -->
+	<!-- doctor section end -->
 
-	<!-- ======= Frequently Asked Questions Section ======= -->
+	<!-- question section start ======= -->
 	<section id="faq" class="faq section-bg">
 		<div class="container">
 
@@ -784,10 +784,10 @@
 
 		</div>
 	</section>
-	<!-- End Frequently Asked Questions Section -->
+	<!-- question section end -->
 
 
-	<!-- ======= Gallery Section ======= -->
+	<!-- gallery section start-->
 	<section id="gallery" class="gallery">
 		<div class="container">
 
@@ -879,9 +879,9 @@
 
 		</div>
 	</section>
-	<!-- End Gallery Section -->
+	<!-- gallery section end-->
 
-	<!-- ======= Contact Section ======= -->
+	<!-- contact section start -->
 	<section id="contact" class="contact">
 		<div class="container">
 
@@ -932,8 +932,7 @@
 
 				<div class="col-lg-8 mt-5 mt-lg-0">
 
-					<form action="forms/contact.php" method="post" role="form"
-						class="php-email-form">
+					<form action="" method="post" role="form">
 						<div class="row">
 							<div class="col-md-6 form-group">
 								<input type="text" name="name" class="form-control" id="name"
@@ -952,12 +951,7 @@
 							<textarea class="form-control" name="message" rows="5"
 								placeholder="Message" required></textarea>
 						</div>
-						<div class="my-3">
-							<div class="loading">Loading</div>
-							<div class="error-message"></div>
-							<div class="sent-message">Your message has been sent. Thank
-								you!</div>
-						</div>
+
 						<div class="text-center">
 							<button type="submit">Send Message</button>
 						</div>
@@ -969,9 +963,9 @@
 
 		</div>
 	</section>
-	<!-- End Contact Section -->
+	<!-- contact section end -->
 
-	<!-- Footer Start -->
+	<!-- footer Start -->
 	<footer id="footer">
 
 		<div class="footer-top">
@@ -1032,7 +1026,7 @@
 		</div>
 
 	</footer>
-	<!-- Footer End-->
+	<!-- footer End-->
 
 
 
