@@ -75,8 +75,8 @@ public class AppointmentDao {
 
 			}
 
-			list.stream().filter(apntmnt -> Integer.parseInt(apntmnt.getAppointmentDate().substring(0, 1)) > 25)
-					.forEach(a -> System.out.println(a));
+			list.stream().filter(apntmnt ->Integer.parseInt(apntmnt.getAppointmentDate().substring(0, 2))>25)
+					.forEach(a -> System.out.println(a.getPatientId()+"->"+a.getPatientName()));
 
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
